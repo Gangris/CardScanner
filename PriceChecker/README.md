@@ -15,8 +15,11 @@ Within the ./private.json file, needs to store the PRIVATE_KEY and PUBLIC_KEY pr
 
 ## Methods
 
+### startup()
+Method gets called when application starts up, and sets up the rest of the application based on the configuration provided within `configuration.json`. 
+
 ### getBearerToken()
 This method requests a new bearer token, and stores it locally within the MongoDB Sessions table. It also ensures that the bearer token matches
 
 ### getCatalogCatagories()
-This method requests the TCGPlayer Catagories. This data is saved within the MongoDB TCGCatagories table. 
+This method requests the TCGPlayer Catagories. This data is saved within the MongoDB TCGCatagories table.

@@ -1,28 +1,29 @@
 {
-  "application": {
-    "pollPriceUpdates": {
-      "enabled": false,
-      "pollDatabase": 86400000,
-      "dateCutoff": 7
+    "application": {
+        "pollPriceUpdates": {
+            "enabled": false,
+            "pollDatabase": 86400000,
+            "dateCutoff": 7
+        },
+        "pollNewCards": {
+            "enabled": true,
+            "pollDatabase": 300000
+        }
     },
-    "pollNewCards": {
-      "enabled": true,
-      "pollDatabase": 300000
+    "db": {
+        "dbPath": "mongodb://localhost:27017/",
+        "databaseName": "cardPriceCheckerDB",
+        "cardCollection": {
+            "name": "cards",
+            "schema": [
+                "id",
+                "priceHigh",
+                "priceMid",
+                "priceLow",
+                "count",
+                "priceTimestamp",
+                "countTimestamp"
+            ]
+        }
     }
-  },
-  "db": {
-    "databaseName": "cardPriceCheckerDB",
-    "cardCollection": {
-      "name": "cards",
-      "schema": [
-        "id",
-        "priceHigh",
-        "priceMid",
-        "priceLow",
-        "count",
-        "priceTimestamp",
-        "countTimestamp"
-      ]
-    }
-  }
 }
