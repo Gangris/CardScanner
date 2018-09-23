@@ -1,4 +1,4 @@
-var https = require("https");
+var http = require("http");
 var config = require("./configuration.json");
 var priv = require("./private.json");
 var MongoClient = require("mongodb").MongoClient;
