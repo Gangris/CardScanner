@@ -1,0 +1,16 @@
+{
+  "db": {
+    "databaseName": "cardPriceCheckerDB",
+    "cardCollection": {
+      "name": "cards",
+      "schema": [
+        "id",
+        "priceHigh",
+        "priceMid",
+        "priceLow",
+        "count",
+        "priceTimestamp"
+      ]
+    }
+  }
+}
