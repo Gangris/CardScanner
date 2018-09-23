@@ -13,17 +13,30 @@
     "db": {
         "dbPath": "mongodb://localhost:27017/",
         "databaseName": "cardPriceCheckerDB",
-        "cardCollection": {
-            "name": "cards",
-            "schema": [
-                "id",
-                "priceHigh",
-                "priceMid",
-                "priceLow",
-                "count",
-                "priceTimestamp",
-                "countTimestamp"
-            ]
+        "collections": {
+            "cardCollection": {
+                "name": "cards",
+                "schema": [
+                    "id",
+                    "priceHigh",
+                    "priceMid",
+                    "priceLow",
+                    "count",
+                    "priceTimestamp",
+                    "countTimestamp"
+                ]
+            },
+            "session": {
+                "name": "sessions",
+                "schema": [
+                    "id",
+                    "accessToken",
+                    "issued",
+                    "expires",
+                    "userName",
+                    "tokenType"
+                ]
+            }
         }
     }
 }

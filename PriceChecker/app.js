@@ -47,7 +47,19 @@ function testConnectDB(){
 
 function getBearerToken() {
     return new Promise((resolve, reject) => {
+        resolve();
+    });
+}
 
+function getSession() {
+    return new Promise((resolve, reject) => {
+        resolve();
+    });
+}
+
+function saveSession() {
+    return new Promise((resolve, reject) => {
+        resolve();
     });
 }
 
