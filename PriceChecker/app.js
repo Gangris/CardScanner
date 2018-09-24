@@ -151,7 +151,7 @@ function getRemoteSession() {
 }
 
 // TODO: Need to complete this when API is provided.
-function saveSession() {
+function saveSession(session) {
     return new Promise((resolve, reject) => {
         console.log("Start saveSession.");
         resolve();
