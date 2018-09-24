@@ -1,5 +1,5 @@
 # Gangris Price Checker Module
-This application monitors a MongoDB database for new cards that have been scanned by the Gangris Card Scanner module. Optionally will provide a price update for existing cards within the database if the price has not been updated since a specified time interval.
+This JavaScript application monitors a MongoDB database for new cards that have been scanned by the Gangris Card Scanner module. Optionally will provide a price update for existing cards within the database if the price has not been updated since a specified time interval.
 
 ## Configuration
 This application requires a TCGPlayer Developer Key to access their pricing API. This requires an application here: http://developer.tcgplayer.com/developer-application-form.html
