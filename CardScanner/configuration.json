@@ -1,0 +1,12 @@
+{
+    "pi" : {
+        "servoPin": 18,
+        "miniServoPin": 24
+    },
+    "camera": {
+        "colorEffects": [128,128],
+        "rotation": 90,
+        "resolution": [300,100]
+    },
+    "fileName": "MTG"
+}

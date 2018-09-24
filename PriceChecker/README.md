@@ -4,7 +4,7 @@ This JavaScript application monitors a MongoDB database for new cards that have 
 ## Configuration
 This application requires a TCGPlayer Developer Key to access their pricing API. This requires an application here: http://developer.tcgplayer.com/developer-application-form.html
 
-Within the ./private.json file, needs to store the PRIVATE_KEY and PUBLIC_KEY provided by TCGPlayer.
+Within the `private.json` file, it needs to store the PRIVATE_KEY and PUBLIC_KEY provided by TCGPlayer.
 
 ```json
 {
@@ -12,6 +12,8 @@ Within the ./private.json file, needs to store the PRIVATE_KEY and PUBLIC_KEY pr
   "PUBLIC_KEY": "..."
 }
 ```
+
+Within the `configuration.json` file, it needs to store the polling time for each module within the application and the configuration for the MongoDB database.
 
 ## Methods
 
