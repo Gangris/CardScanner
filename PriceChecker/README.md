@@ -16,10 +16,37 @@ Within the ./private.json file, needs to store the PRIVATE_KEY and PUBLIC_KEY pr
 ## Methods
 
 ### startup()
-Method gets called when application starts up, and sets up the rest of the application based on the configuration provided within `configuration.json`. 
+Method gets called when application starts up, and sets up the rest of the application based on the configuration provided within `configuration.json`.
+
+### startupCheckup()
+Method that just ensures that the `private.json` and `configuration.json` was loaded properly and configured properly.
+
+### testConnectDB()
+Method called on startup to test the connection to the configured MongoDB database.
+
+### main()
+Main application loop. It tests to see if the configurable time has elapsed for the enabled services so they can be run again. It waits till they complete the actions requested via Promises, then waits a configurable time before performing the tests again.
 
 ### getBearerToken()
-This method requests a new bearer token, and stores it locally within the MongoDB Sessions table. It also ensures that the bearer token matches
+Method to get a current session so the application has access to the TCGPlayer API.
 
-### getCatalogCatagories()
-This method requests the TCGPlayer Catagories. This data is saved within the MongoDB TCGCatagories table.
+### testSession()
+Method to ensure the currently stored session in memory is still valid.
+
+### getLocalSession()
+Method to get the latest session from the MongoDB database, tests if it is valid, and returns the session if it is and null/undefined if it is not.
+
+### getRemoteSession()
+To be completed.
+
+### saveSession(session)
+To be completed.
+
+### pollNewCards()
+To be completed.
+
+### pollPriceUpdates()
+To be completed.
+
+### processPriceUpdates()
+To be completed.
