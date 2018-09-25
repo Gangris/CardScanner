@@ -25,8 +25,8 @@ def setup():
 setup()
 camera_setup(camera)
 
-servo=GPIO.PWM(config["pi"]["servoPin"],50)
-miniServo=GPIO.PWM(config["pi"]["miniServoPin"],50)
+servo = GPIO.PWM(config["pi"]["servoPin"],50)
+miniServo = GPIO.PWM(config["pi"]["miniServoPin"],50)
 miniServo.start(2.5)
 time.sleep(1)
 
