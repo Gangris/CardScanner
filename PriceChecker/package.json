@@ -1,0 +1,19 @@
+{
+  "name": "gangris-card-price-checker",
+  "version": "0.0.1",
+  "description": "Maintains and updates pricing information for private card collections.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gangris"
+  ],
+  "author": "Adarian Eastman",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.321.0",
+    "mongodb": "^3.1.6",
+    "uuid": "^3.3.2"
+  }
+}
